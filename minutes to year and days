@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main
+{
+
+public static void main(String[] args)
+{
+
+int min,days;
+float yr;
+Scanner sc = new Scanner(System.in);
+System.out.println("Input the number of minutes:");
+min = sc.nextInt();
+sc.close();
+yr=min/(365*24*60);
+days=(min/(24*60)%365);
+System.out.println(min+ "Minutes is approximately equal to:" +yr+ "years and" +days+ "days");
+}
+}
